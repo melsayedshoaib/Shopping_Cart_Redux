@@ -1,4 +1,20 @@
-# Getting Started with Create React App
+# Project Name
+
+Shopping Cart With Redux toolkit
+
+## Features
+
+- Routing with createBroweserRoter, RouterProvider, and Outlet.
+- Store file as the main store in our project where all slices live in. it has 3 slices, products slice, single product slice, and cart slice.
+- In products slice, data is fetched using the async thunk, at the fulfilled, data is stored in the products array via action.payload. Error is handled by RejectedWithValue.
+- In single product slice, whenver click on any product, it will be displayed in the about component, extracted its id with useParams hook.
+- Cart slice handles all the methods being used in the cart component, from adding to cart, removing an item, increasing, decreasing, and clearing the whole cart.
+
+## Enhancements
+
+I've encountered a problem when dispatcing the thunk functions calling in useEffect as you can notice in the products component, I've used useCallback hook to make sure that the function won't be re-created every time component did mount, so we are free of infinite looping, but whenever out dependencies change, here comes the part when re-creation takes place.
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
