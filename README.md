@@ -1,6 +1,4 @@
-# Project Name
-
-Shopping Cart With Redux toolkit
+#Shopping Cart With Redux toolkit
 
 ## Features
 
