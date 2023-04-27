@@ -7,6 +7,9 @@
 - In products slice, data is fetched using the async thunk, at the fulfilled, data is stored in the products array via action.payload. Error is handled by RejectedWithValue.
 - In single product slice, whenver click on any product, it will be displayed in the about component, extracted its id with useParams hook.
 - Cart slice handles all the methods being used in the cart component, from adding to cart, removing an item, increasing, decreasing, and clearing the whole cart.
+- You can add to cart from multiple places, from the products component, and about component.
+- You can increase, decrease, and clear the whole cart in the cart page, also, when you decrease products down to zero, they will be removed from your cart.
+- At the bottom right corner, you can see the total amount of all products in your cart.
 
 ## Enhancements
 
